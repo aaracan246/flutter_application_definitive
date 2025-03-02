@@ -18,10 +18,10 @@ class MyApp extends StatelessWidget {
 }
 
 class D20Roller extends StatefulWidget {
-  const D20Roller({super.key});
+  const D20Roller({super.key}); 
 
   @override
-  _D20RollerState createState() => _D20RollerState();
+  _D20RollerState createState() => _D20RollerState(); 
 }
 
 class _D20RollerState extends State<D20Roller> {
@@ -100,9 +100,10 @@ class HistorialScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Historial de tiradas"),
+        title: const Text("Historial de tiradas", style: TextStyle(fontSize: 20, color: Colors.white)), 
         backgroundColor: Colors.brown,
       ),
+      backgroundColor: const Color(0xFFFFDAB9),
       body: historial.isEmpty
           ? const Center(
               child: Text(
